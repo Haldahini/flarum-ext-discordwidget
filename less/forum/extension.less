@@ -1,0 +1,62 @@
+/**
+ * This file is part of hugogit/flarum-ext-discordwidget
+ * See README.md for details and license
+ */
+
+.discordBox {
+	position: fixed;
+	width:370px;
+	top:350px;
+	right:-350px;
+	transition:1s;
+}
+
+.discordArrow {
+	width: 20px;
+	height:500px;
+	float:left;
+}
+
+.discordHover {
+	position: absolute;
+	width: 20px;
+	height:395px;
+	bottom:30px;
+	left:0;
+	background: #738bd7;
+	border-radius: 10px 0 0 10px; 
+}
+
+.discordArrow {
+	position: absolute;
+	height:16px;
+	top:47%;
+	left:0;
+	background-image: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM3Ny40MDYgMzc3LjQwNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzc3LjQwNiAzNzcuNDA2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTI3MC42NTIsMzczLjk4MWMxMS41ODMsMTAuNjE4LDI3Ljk5My01Ljc5MiwxNy4zNzUtMTcuMzc1QzIzMC4xMSwzMDAuNjIsMTczLjE1OSwyNDQuNjMzLDExNS4yNDIsMTg4LjY0NyAgIEMxNzMuMTU5LDEzMi42NjEsMjMwLjExLDc2LjY3NSwyODguMDI3LDIwLjY4OGMxMS41ODMtMTAuNjE4LTUuNzkyLTI3Ljk5My0xNy4zNzUtMTcuMzc1ICAgQzIwOS44MzksNjIuMTk1LDE0OS4wMjcsMTIxLjA3OCw4OS4xNzksMTc5Ljk2Yy00LjgyNiw0LjgyNi00LjgyNiwxMi41NDksMCwxNy4zNzUgICBDMTQ5LjAyNywyNTYuMjE3LDIwOS44MzksMzE1LjA5OSwyNzAuNjUyLDM3My45ODF6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==');
+	background-repeat: no-repeat;
+	transition:0.5s;
+}
+
+.discordFrame{
+	float:right;
+	width:350px;
+	height:500px;
+}
+
+.discordBox:hover {
+	right:0;
+	transition:1s;
+
+	.discordArrow {
+        transform:rotate(180deg);
+        -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        transition:0.5s;
+	}
+}
+
+@media (max-width: 900px) {
+	.discordBox {
+		display:none;
+	}
+}
