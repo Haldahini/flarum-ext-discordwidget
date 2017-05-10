@@ -11,8 +11,7 @@ import PermissionGrid from 'flarum/components/PermissionGrid';
 import addDiscordWidgetPane from 'hugogit/discordwidget/addDiscordWidgetPane'
 
 app.initializers.add('hugogit-discord-widget', app => {
-
-    console.log('test')
+    
     // add the admin pane
     addDiscordWidgetPane();
 
