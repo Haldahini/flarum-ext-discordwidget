@@ -89,8 +89,8 @@ System.register("hugogit/discordwidget/components/DiscordWidgetPage", ["flarum/C
                     key: "view",
                     value: function view() {
                         return [m('div', { className: 'DiscordWidgetPage' }, [m('div', { className: 'container' }, [m('form', { onsubmit: this.onsubmit.bind(this) }, [m('div', { className: 'DiscordWidgetPage-id' }, [FieldSet.component({
-                            label: 'Id of your discord',
-                            children: [m('label', {}, 'Some Text ?'), m('input', {
+                            label: 'Discord Widget Settings',
+                            children: [m('label', {}, 'Set your discord server id here :'), m('input', {
                                 className: 'FormControl',
                                 value: this.values.discord_widget_id() || '',
                                 oninput: m.withAttr('value', this.values.discord_widget_id)
@@ -129,7 +129,7 @@ System.register("hugogit/discordwidget/components/DiscordWidgetPage", ["flarum/C
                             // on succes, show an alert
                             app.alerts.show(_this3.successAlert = new Alert({
                                 type: 'success',
-                                children: 'settings Save !'
+                                children: 'Your Discord ID save !'
                             }));
                         }).catch(function () {}).then(function () {
                             // return to the initial state and redraw the page
@@ -167,7 +167,6 @@ System.register('hugogit/discordwidget/main', ['flarum/extend', 'flarum/app', 'f
 
             app.initializers.add('hugogit-discord-widget', function (app) {
 
-                console.log('test');
                 // add the admin pane
                 addDiscordWidgetPane();
 
