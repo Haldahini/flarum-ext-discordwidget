@@ -11,17 +11,15 @@ app.initializers.add('discordwidget', function() {
 
   	var id = app.forum.attribute('discord_widget_id');
 
-    vdom.children.push(
-    	<div class="container">
-	    	<div class="discordBox">
-	    		<div class="discordHover">
-	    			<div class="discordArrow">
-	    			</div>
-	    		</div>
-	    		<div class="discordFrame">
-	    			<iframe src="https://discordapp.com/widget?id={{ id }}&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-	    		</div>
-	    	</div>
-    	</div>);
+    vdom.children.push(m('div',{ 'class': 'container' },
+		m('div',{ 'class': 'discordBox' },
+			m('div',{ 'class': 'discordHover' },
+						m('div', { 'class': 'discordArrow' })
+			),
+			m('div',{ 'class': 'discordFrame' },
+				m('iframe', { src: 'https://discordapp.com/widget?id='+id+'&theme=dark', width: '350', height: '500', allowtransparency: 'true', frameborder: '0' })
+			)
+		)
+	));
   });
 });
