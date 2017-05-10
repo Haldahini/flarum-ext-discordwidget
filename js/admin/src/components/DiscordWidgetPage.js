@@ -40,9 +40,9 @@ export default class DiscordWidgetPage extends Component {
                     m('form', {onsubmit: this.onsubmit.bind(this)}, [
                         m('div', {className: 'DiscordWidgetPage-id'}, [
                             FieldSet.component({
-                                label: 'Id of your discord',
+                                label: 'Discord Widget Settings',
                                 children: [
-                                    m('label', {}, 'Some Text ?'),
+                                    m('label', {}, 'Set your discord server id here :'),
                                     m('input', {
                                         className: 'FormControl',
                                         value: this.values.discord_widget_id() || '',
@@ -90,7 +90,7 @@ export default class DiscordWidgetPage extends Component {
                 // on succes, show an alert
                 app.alerts.show(this.successAlert = new Alert({
                     type: 'success',
-                    children: 'settings Save !'
+                    children: 'Your Discord ID save !'
                 }));
             })
             .catch(() => {
