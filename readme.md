@@ -11,4 +11,5 @@ Discord Widget for Flarum.
     ```
    
 2. Enable extension in flarum admin panel and paste your discord server id in discord widget admin panel.
-![discordid](https://cloud.githubusercontent.com/assets/10034391/25888407/55d0fac8-3566-11e7-8ada-7917cfdf029d.png)
+![discordid](https://cloud.githubusercontent.com/assets/10034391/25911372/e1a9c9ec-35b3-11e7-93de-376e3c2de202.png)
+
