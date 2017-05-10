@@ -4,7 +4,7 @@
     "type": "flarum-extension",
     "keywords": ["flarum", "discord", "widget"],
     "license": "MIT",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "authors": [
         {
             "name": "Hugo Guiter",
