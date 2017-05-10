@@ -1,4 +1,5 @@
 {
+    "name": "hugogit/flarum-ext-discordwidget",
     "description": "Add Discord Widget to Flarum",
     "type": "flarum-extension",
     "keywords": ["flarum", "discord", "widget"],
@@ -11,6 +12,7 @@
         }
     ],
     "require": {
+        "php": ">=5.4.0",
         "flarum/core": "^0.1.0-beta.6"
     },
     "extra": {
@@ -19,7 +21,7 @@
             "icon": {
                 "name": "comments-o",
                 "backgroundColor": "#7289da",
-                "color": "#fff"
+                "color": "#ffffff"
             }
         }
     },
