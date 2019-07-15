@@ -1,6 +1,7 @@
 # Flarum Discord Widget Extension
 
-Discord Widget for Flarum.
+Discord Widget for Flarum ( before 9.0 ).
+Flarum 9.0 not supported
 
 ## Installation
 
